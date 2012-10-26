@@ -1,3 +1,7 @@
+:css
+  .typeahead {
+      z-index: 1100;
+  }
 .well.home-wells
   .well-head
     Chwink Details
@@ -5,7 +9,7 @@
     .row-fluid
       .span4 Name *
       .span
-        = f.input :name, label: false, input_html: {class: 'input-medium', placeholder: 'Chwink Name'}
+        = f.input :name, label: false, input_html: {class: 'input-medium ', placeholder: 'Chwink Name'}
     .row-fluid
       .span4 Image 
       .span2 
@@ -32,8 +36,8 @@
     .row-fluid        
       %strong Edits are obsolete ;) Create with care!
       = f.submit 'Chwink It!', class: 'btn btn-medium btn-chwink-orange btn-submit-chwink'
-        
-        
 
-
-  
+:javascript
+  $('#chwink_name').typeahead({
+    source: ["Sanjiv", "Kumar", "Jha"]
+  });

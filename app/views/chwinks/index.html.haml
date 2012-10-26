@@ -63,6 +63,7 @@
 
 
     var activity_subscription = client.subscribe('/activity/public', function(data){
+      console.log('subscribe');
       $('#messagewindow ul').prepend(data.message);                             
     }); 
   });
