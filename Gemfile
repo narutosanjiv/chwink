@@ -24,7 +24,7 @@ end
 group :test do
     gem 'capybara'
     gem 'database_cleaner'
-    gem 'cucumber-rails', :require => false 
+    gem 'cucumber-rails', '>= 3.0.0', :require => false
     gem 'rspec-rails'
     gem 'spork'
     gem 'factory_girl_rails'
