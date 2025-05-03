@@ -25,7 +25,7 @@ group :test do
     gem 'capybara'
     gem 'database_cleaner'
     gem 'cucumber-rails', :require => false 
-    gem 'rspec-rails'
+    gem 'rspec-rails', '>= 8.0.0'
     gem 'spork'
     gem 'factory_girl_rails'
     gem 'mongoid-rspec'
