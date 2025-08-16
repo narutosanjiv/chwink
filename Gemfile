@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.8'
+gem 'rails', '7.1.5.2'
 gem 'rake', '0.9.2.2'
 gem 'devise', '2.1.2'
 gem 'oauth2'
@@ -57,7 +57,7 @@ gem "bson_ext"
 gem "mongoid"
 gem "omniauth", "~> 1.0.0"
 gem 'omniauth-twitter', :git => 'https://github.com/arunagw/omniauth-twitter.git'
-gem "mongoid-paperclip", :require => 'mongoid_paperclip'
+gem "mongoid-paperclip", ">= 0.0.9", :require => 'mongoid_paperclip'
 #gem "rmagick", "~> 2.13.1"
 gem "mongoid-history"
 gem "simple_form"
