@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.8'
 gem 'rake', '0.9.2.2'
 gem 'devise', '2.1.2'
-gem 'oauth2'
+gem 'oauth2', '>= 1.4.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -28,7 +28,7 @@ group :test do
     gem 'rspec-rails'
     gem 'spork'
     gem 'factory_girl_rails'
-    gem 'mongoid-rspec'
+    gem 'mongoid-rspec', '>= 1.5.5'
 end
 
 
@@ -54,14 +54,14 @@ gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
 gem "bson_ext"
-gem "mongoid"
+gem "mongoid", ">= 7.6.1"
 gem "omniauth", "~> 1.0.0"
 gem 'omniauth-twitter', :git => 'https://github.com/arunagw/omniauth-twitter.git'
 gem "mongoid-paperclip", :require => 'mongoid_paperclip'
 #gem "rmagick", "~> 2.13.1"
-gem "mongoid-history"
+gem "mongoid-history", ">= 0.4.1"
 gem "simple_form"
-gem 'mongoid_slug'
+gem 'mongoid_slug', '>= 3.0.0'
 
 # Deployment
 gem 'mina'
